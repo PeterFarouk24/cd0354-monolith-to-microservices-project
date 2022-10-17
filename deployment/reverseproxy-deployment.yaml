@@ -17,12 +17,14 @@ spec:
       containers:
       - image: peterfarouk/reverseproxy:v1
         name: reverseproxy
-        imagePullPolicy: Always               
-        ports:
-        - containerPort: 8080
+        imagePullPolicy: Always          
         resources:
           requests:
             cpu: "250m"
           limits:
-            cpu: "500m"
+            cpu: "500m"       
+        ports:
+        - containerPort: 8080
       restartPolicy: Always
+
+
